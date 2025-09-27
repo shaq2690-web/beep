@@ -1,6 +1,9 @@
 workflows:
   android:
     name: Build APK for Android
+    environment:
+      vars:
+        EXPO_TOKEN: $EXPO_TOKEN  # استفاده از توکن Expo از متغیرهای محیطی
     scripts:
       - name: Install dependencies
         script: |

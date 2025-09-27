@@ -1,7 +1,6 @@
 workflows:
   android:
     name: Build APK for Android
-    description: Build APK for Android using Codemagic
     environment:
       vars:
         EXPO_TOKEN: $EXPO_TOKEN

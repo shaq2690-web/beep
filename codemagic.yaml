@@ -2,7 +2,5 @@ workflows:
   android:
     name: Build APK for Android
     steps:
-      - name: Install dependencies
-        run: npm install
-      - name: Build APK
-        run: eas build --platform android
+      - run: npm install
+      - run: eas build --platform android

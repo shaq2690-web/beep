@@ -1,13 +1,8 @@
 workflows:
   android:
     name: Build APK for Android
-    environment:
-      vars:
-        EXPO_TOKEN: $EXPO_TOKEN
     steps:
       - name: Install dependencies
-        run: |
-          npm install
+        run: npm install
       - name: Build APK
-        run: |
-          eas build --platform android
+        run: eas build --platform android
